@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// import { ExercicioJSX } from './jsx/exercicio';
+// import { ExercicioJSX } from './jsx/exercicio';
+// import { AulaEvent } from './event/Aula';
+// import { AulaJSX } from './jsx/Aula';
+// import { Aula2JSX } from './jsx/Aula2';
+// import { ExercicioJSX2 } from './jsx/exercicio2';
+// import { Form } from './jsx/Components/Form/Form';
+// import { ExercicioComponents } from './jsx/Components/Exercicio/Exercicio';
 
-function App() {
+import { AulaUseState } from './hooks/UseState/Aula';
+
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AulaUseState />
+      {/* <ExercicioComponents /> */}
+      {/* <Form /> */}
+      {/* {<AulaEvent />} */}
+      {/* <ExercicioJSX /> */}
+      {/* <ExercicioJSX2 /> */}
+      {/* <AulaJSX /> */}
+      {/* <Aula2JSX /> */}
+    </>
   );
 }
-
-export default App;
