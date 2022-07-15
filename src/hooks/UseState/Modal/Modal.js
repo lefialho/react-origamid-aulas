@@ -1,8 +1,9 @@
 export function Modal({ modal, setModal }) {
   if (modal)
     return (
-      <div>
+      <section>
+        <div>{modal ? 'Modal Aberto' : 'Modal Fechado'}</div>
         Meu Modalll... <button onClick={() => setModal(false)}>Fechar</button>
-      </div>
+      </section>
     );
 }
