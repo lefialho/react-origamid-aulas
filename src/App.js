@@ -6,13 +6,17 @@
 // import { ExercicioJSX2 } from './jsx/exercicio2';
 // import { Form } from './jsx/Components/Form/Form';
 // import { ExercicioComponents } from './jsx/Components/Exercicio/Exercicio';
+// import { AulaUseState } from './hooks/UseState/Aula';
 
-import { AulaUseState } from './hooks/UseState/Aula';
+import { AulaUseEffect } from './hooks/useEffect/Aula';
+import { Tab } from './tabs/Tab';
 
 export function App() {
   return (
     <>
-      <AulaUseState />
+      <AulaUseEffect />
+      <Tab />
+      {/* <AulaUseState /> */}
       {/* <ExercicioComponents /> */}
       {/* <Form /> */}
       {/* {<AulaEvent />} */}
