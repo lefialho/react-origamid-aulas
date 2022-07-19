@@ -1,3 +1,17 @@
+import { Tab1 } from './Tab1';
+import { Tab2 } from './Tab2';
+import { Tab3 } from './Tab3';
+
+export function TabContent({ tab }) {
+  if (tab === 'tab1') {
+    return <Tab1 />;
+  } else if (tab === 'tab2') {
+    return <Tab2 />;
+  } else {
+    return <Tab3 />;
+  }
+}
+
 export function handleTab(tabText, setTab, dataTab) {
   switch (tabText) {
     case 'Tab 1':

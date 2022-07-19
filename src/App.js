@@ -10,12 +10,14 @@
 
 import { AulaUseEffect } from './hooks/useEffect/Aula';
 import { Tab } from './tabs/Tab';
+import { TabWithObj } from './tabs/TabWithObj';
 
 export function App() {
   return (
     <>
       <AulaUseEffect />
       <Tab />
+      <TabWithObj />
       {/* <AulaUseState /> */}
       {/* <ExercicioComponents /> */}
       {/* <Form /> */}
