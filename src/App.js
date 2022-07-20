@@ -7,17 +7,19 @@
 // import { Form } from './jsx/Components/Form/Form';
 // import { ExercicioComponents } from './jsx/Components/Exercicio/Exercicio';
 // import { AulaUseState } from './hooks/UseState/Aula';
+// import { AulaUseEffect } from './hooks/useEffect/Aula';
+// import { Tab } from './tabs/Tab';
+// import { TabWithObj } from './tabs/TabWithObj';
 
-import { AulaUseEffect } from './hooks/useEffect/Aula';
-import { Tab } from './tabs/Tab';
-import { TabWithObj } from './tabs/TabWithObj';
+import { ExercicioUseEffect } from './hooks/useEffect/Exercicio';
 
 export function App() {
   return (
     <>
-      <AulaUseEffect />
-      <Tab />
-      <TabWithObj />
+      <ExercicioUseEffect />
+      {/* <AulaUseEffect /> */}
+      {/* <Tab /> */}
+      {/* <TabWithObj /> */}
       {/* <AulaUseState /> */}
       {/* <ExercicioComponents /> */}
       {/* <Form /> */}
