@@ -10,7 +10,6 @@ import { ProdutoExercicio } from './ProdutoExercicio';
 
 export function ExercicioUseEffect() {
   const [produto, setProduto] = useState(null);
-  const [carregando, setCarregando] = useState(null);
 
   function handleClick({ target }) {
     setProduto(target.innerText);
@@ -33,10 +32,7 @@ export function ExercicioUseEffect() {
         <button onClick={handleClick}>Smartphone</button>
         <button onClick={handleClick}>Notebook</button>
       </div>
-      {carregando && <div>Carregando...</div>}
-      {!carregando && produto && (
-        <ProdutoExercicio carregando={setCarregando} produto={produto} />
-      )}
+      <ProdutoExercicio produto={produto} />
     </section>
   );
 }
