@@ -16,9 +16,9 @@ export function ExercicioUseEffect() {
   }
 
   useEffect(() => {
-    const produtoLocal = window.localStorage.getItem('produto');
-    if (produtoLocal !== null) setProduto(produtoLocal);
-    // console.log(produtoLocal);
+    const produtoLocalStorage = window.localStorage.getItem('produto');
+    if (produtoLocalStorage !== null) setProduto(produtoLocalStorage);
+    // console.log(produtoLocalStorage);
   }, []);
 
   useEffect(() => {

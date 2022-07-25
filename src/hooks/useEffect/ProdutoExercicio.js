@@ -17,7 +17,7 @@ export function ProdutoExercicio({ produto }) {
     }
   }, [produto]); //Faz o fetch sempre que o produto modifica
 
-  if (dados === null) return null;
+  if (dados === null) return;
 
   return (
     <>
