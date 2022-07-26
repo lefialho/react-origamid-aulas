@@ -10,13 +10,15 @@
 // import { AulaUseEffect } from './hooks/useEffect/Aula';
 // import { Tab } from './tabs/Tab';
 // import { TabWithObj } from './tabs/TabWithObj';
+// import { ExercicioUseEffect } from './hooks/useEffect/Exercicio';
 
-import { ExercicioUseEffect } from './hooks/useEffect/Exercicio';
+import { AulaUseRef } from './hooks/useRef/Aula';
 
 export function App() {
   return (
     <>
-      <ExercicioUseEffect />
+      <AulaUseRef />
+      {/* <ExercicioUseEffect /> */}
       {/* <AulaUseEffect /> */}
       {/* <Tab /> */}
       {/* <TabWithObj /> */}
