@@ -12,13 +12,15 @@
 // import { TabWithObj } from './tabs/TabWithObj';
 // import { ExercicioUseEffect } from './hooks/useEffect/Exercicio';
 // import { AulaUseRef } from './hooks/useRef/Aula';
+// import { AulaUseMemoCallBack } from './hooks/useMemo-useCallback/AulaUseMemoCallback';
 
-import { AulaUseMemoCallBack } from './hooks/useMemo-useCallback/AulaUseMemoCallback';
+import { AulaUseContext } from './hooks/useContext/aulaUseContext';
 
 export function App() {
   return (
     <>
-      <AulaUseMemoCallBack />
+      <AulaUseContext />
+      {/* <AulaUseMemoCallBack /> */}
       {/* <AulaUseRef /> */}
       {/* <ExercicioUseEffect /> */}
       {/* <AulaUseEffect /> */}
