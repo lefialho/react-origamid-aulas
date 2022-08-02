@@ -13,13 +13,14 @@
 // import { ExercicioUseEffect } from './hooks/useEffect/Exercicio';
 // import { AulaUseRef } from './hooks/useRef/Aula';
 // import { AulaUseMemoCallBack } from './hooks/useMemo-useCallback/AulaUseMemoCallback';
-
-import { AulaUseContext } from './hooks/useContext/aulaUseContext';
+// import { AulaUseContext } from './hooks/useContext/AulaUseContext';
+import { ExercicioUseContext } from './hooks/useContext/Exercicio/ExercicioUseContext';
 
 export function App() {
   return (
     <>
-      <AulaUseContext />
+      <ExercicioUseContext />
+      {/* <AulaUseContext /> */}
       {/* <AulaUseMemoCallBack /> */}
       {/* <AulaUseRef /> */}
       {/* <ExercicioUseEffect /> */}
