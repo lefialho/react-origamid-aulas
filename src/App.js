@@ -14,12 +14,15 @@
 // import { AulaUseRef } from './hooks/useRef/Aula';
 // import { AulaUseMemoCallBack } from './hooks/useMemo-useCallback/AulaUseMemoCallback';
 // import { AulaUseContext } from './hooks/useContext/AulaUseContext';
-import { ExercicioUseContext } from './hooks/useContext/Exercicio/ExercicioUseContext';
+// import { ExercicioUseContext } from './hooks/useContext/Exercicio/ExercicioUseContext';
+
+import { AulaCustomHook } from './hooks/CustomHook/AulaCustomHook';
 
 export function App() {
   return (
     <>
-      <ExercicioUseContext />
+      <AulaCustomHook />
+      {/* <ExercicioUseContext /> */}
       {/* <AulaUseContext /> */}
       {/* <AulaUseMemoCallBack /> */}
       {/* <AulaUseRef /> */}
