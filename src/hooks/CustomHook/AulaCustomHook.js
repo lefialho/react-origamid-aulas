@@ -1,4 +1,4 @@
-import { UseLocalStorage } from './useLocalStorage';
+import { UseLocalStorage } from './UseLocalStorage';
 
 export function AulaCustomHook() {
   const [product, setProduct] = UseLocalStorage('product', ''); // Hook personalizado

@@ -15,13 +15,16 @@
 // import { AulaUseMemoCallBack } from './hooks/useMemo-useCallback/AulaUseMemoCallback';
 // import { AulaUseContext } from './hooks/useContext/AulaUseContext';
 // import { ExercicioUseContext } from './hooks/useContext/Exercicio/ExercicioUseContext';
+// import { AulaCustomHook } from './hooks/CustomHook/AulaCustomHook';
+// import { UseFetch } from './hooks/CustomHook/UseFetch';
 
-import { AulaCustomHook } from './hooks/CustomHook/AulaCustomHook';
+import { AulaUseFetch } from './hooks/CustomHook/AulaUseFetch';
 
 export function App() {
   return (
     <>
-      <AulaCustomHook />
+      <AulaUseFetch />
+      {/* <AulaCustomHook /> */}
       {/* <ExercicioUseContext /> */}
       {/* <AulaUseContext /> */}
       {/* <AulaUseMemoCallBack /> */}
