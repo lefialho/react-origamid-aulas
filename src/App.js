@@ -17,13 +17,15 @@
 // import { ExercicioUseContext } from './hooks/useContext/Exercicio/ExercicioUseContext';
 // import { AulaCustomHook } from './hooks/CustomHook/AulaCustomHook';
 // import { UseFetch } from './hooks/CustomHook/UseFetch';
+// import { AulaUseFetch } from './hooks/CustomHook/AulaUseFetch';
 
-import { AulaUseFetch } from './hooks/CustomHook/AulaUseFetch';
+import { AulaFormularios } from './formularios/AulaFormularios';
 
 export function App() {
   return (
     <>
-      <AulaUseFetch />
+      <AulaFormularios />
+      {/* <AulaUseFetch /> */}
       {/* <AulaCustomHook /> */}
       {/* <ExercicioUseContext /> */}
       {/* <AulaUseContext /> */}
