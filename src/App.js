@@ -18,14 +18,21 @@
 // import { AulaCustomHook } from './hooks/CustomHook/AulaCustomHook';
 // import { UseFetch } from './hooks/CustomHook/UseFetch';
 // import { AulaUseFetch } from './hooks/CustomHook/AulaUseFetch';
-
-import { AulaFormularios } from './formularios/AulaFormularios';
+// import { AulaFormularioInput } from "./formularios/input/AulaFormularioInput";
+import { ExercicioFormularioInput } from "./formularios/input/ExercicioFormularioInput";
+import { Radio } from "./formularios/radio";
+import { Select } from "./formularios/select";
+import { TextArea } from "./formularios/textarea";
 
 export function App() {
   return (
     <>
-      <AulaFormularios />
+      <Radio />
+      <Select />
+      <TextArea />
+      <ExercicioFormularioInput />
       {/* <AulaUseFetch /> */}
+      {/* <AulaFormularioInput /> */}
       {/* <AulaCustomHook /> */}
       {/* <ExercicioUseContext /> */}
       {/* <AulaUseContext /> */}

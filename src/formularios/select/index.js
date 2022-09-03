@@ -4,7 +4,7 @@ export function Select() {
   const [select, setSelect] = useState('')
 
   return (
-    <form>
+    <form style={{margin: '1rem 0'}}>
     {select}
       <label htmlFor="select">select</label>
       <select
