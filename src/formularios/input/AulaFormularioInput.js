@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export function AulaFormularios() {
+export function AulaFormularioInput() {
   const [form, setForm] = useState({
     nome: 'teste',
     email: '',
@@ -8,13 +8,13 @@ export function AulaFormularios() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(form.nome);
+    // console.log(form.nome);
   }
 
   function handleChange({ target }) {
     const { id, value } = target;
     setForm({ ...form, [id]: value });
-    // console.log(id, value);
+    console.log(id, value);
   }
 
   return (
