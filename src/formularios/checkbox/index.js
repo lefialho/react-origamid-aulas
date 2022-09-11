@@ -4,7 +4,7 @@ export function Checkbox() {
   const [term, setTerm] = useState(false);
   const [colors, setColors] = useState(['azul', 'vermelho']);
 
-  function handleChange({ target }) {
+  function handleChangeTerm({ target }) {
     setTerm(target.checked);
   }
 
@@ -29,7 +29,7 @@ export function Checkbox() {
             type="checkbox"
             value="termos"
             checked={term}
-            onChange={handleChange}
+            onChange={handleChangeTerm}
           />{' '}
           Aceito os termos
         </label>
