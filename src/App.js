@@ -19,22 +19,24 @@
 // import { UseFetch } from './hooks/CustomHook/UseFetch';
 // import { AulaUseFetch } from './hooks/CustomHook/AulaUseFetch';
 // import { AulaFormularioInput } from "./formularios/input/AulaFormularioInput";
-import { ExercicioCheckbox } from './formularios/checkbox/ExercicioCheckbox';
-import { Checkbox } from './formularios/checkbox';
-import { ExercicioFormularioInput } from './formularios/input/ExercicioFormularioInput';
-import { Radio } from './formularios/radio';
-import { Select } from './formularios/select';
-import { TextArea } from './formularios/textarea';
+// import { ExercicioCheckbox } from './formularios/checkbox/ExercicioCheckbox';
+// import { Checkbox } from './formularios/checkbox';
+// import { ExercicioFormularioInput } from './formularios/input/ExercicioFormularioInput';
+// import { Radio } from './formularios/radio';
+// import { Select } from './formularios/select';
+// import { TextArea } from './formularios/textarea';
+import { FormComponents } from './formularios/components';
 
 export function App() {
   return (
     <>
-      <ExercicioCheckbox />
-      <Checkbox />
-      <Radio />
-      <Select />
-      <TextArea />
-      <ExercicioFormularioInput />
+      <FormComponents />
+      {/* <ExercicioCheckbox /> */}
+      {/* <Checkbox /> */}
+      {/* <Radio /> */}
+      {/* <Select /> */}
+      {/* <TextArea /> */}
+      {/* <ExercicioFormularioInput /> */}
       {/* <AulaUseFetch /> */}
       {/* <AulaFormularioInput /> */}
       {/* <AulaCustomHook /> */}
