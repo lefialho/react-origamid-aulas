@@ -55,7 +55,7 @@ textarea {
   border-radius: var(--radius);
   background: #eee;
   transition: 0.2s;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 input[type="text"]:focus,
