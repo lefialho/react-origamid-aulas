@@ -26,14 +26,16 @@
 // import { Select } from './formularios/select';
 // import { TextArea } from './formularios/textarea';
 // import { FormComponents } from './formularios/components';
-import { DesafioFormularios } from './formularios/desafio/desafio';
-import DesafioFormulariosOrigamid from './formularios/desafio/origamid/App';
+// import { DesafioFormularios } from './formularios/desafio/desafio';
+// import DesafioFormulariosOrigamid from './formularios/desafio/origamid/App';
+import { AulaCSS } from './css/Aula';
 
 export function App() {
   return (
     <>
-      <DesafioFormularios />
-      <DesafioFormulariosOrigamid />
+      <AulaCSS />
+      {/* <DesafioFormularios /> */}
+      {/* <DesafioFormulariosOrigamid /> */}
       {/* <FormComponents /> */}
       {/* <ExercicioCheckbox /> */}
       {/* <Checkbox /> */}
