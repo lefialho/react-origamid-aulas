@@ -25,12 +25,16 @@
 // import { Radio } from './formularios/radio';
 // import { Select } from './formularios/select';
 // import { TextArea } from './formularios/textarea';
-import { FormComponents } from './formularios/components';
+// import { FormComponents } from './formularios/components';
+import { DesafioFormularios } from './formularios/desafio/desafio';
+import DesafioFormulariosOrigamid from './formularios/desafio/origamid/App';
 
 export function App() {
   return (
     <>
-      <FormComponents />
+      <DesafioFormularios />
+      <DesafioFormulariosOrigamid />
+      {/* <FormComponents /> */}
       {/* <ExercicioCheckbox /> */}
       {/* <Checkbox /> */}
       {/* <Radio /> */}

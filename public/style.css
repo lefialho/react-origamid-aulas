@@ -98,3 +98,15 @@ hr {
   border: 2px solid black;
   margin: 2rem auto;
 }
+
+fieldset {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+}
+
+fieldset legend {
+  margin-left: 1.5rem;
+  font-weight: 600;
+  padding: 0 .5rem;
+}
