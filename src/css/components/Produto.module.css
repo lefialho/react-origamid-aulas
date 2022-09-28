@@ -1,0 +1,18 @@
+@value peso: bold;
+
+.titulo {
+  color: #333;
+}
+
+.preco-total {
+  font-weight: peso;
+}
+
+.comprar {
+  background-color:var(--color);
+  color: white;
+}
+
+.wrapper-produto {
+  margin-top: 1rem;
+}
