@@ -1,5 +1,5 @@
 import styles from './Produto.module.css';
-console.log(styles); // Css modules cria classes únicas para evitar conflitos
+// console.log(styles); Css modules cria classes únicas para evitar conflitos
 
 export function Produto() {
   return (
