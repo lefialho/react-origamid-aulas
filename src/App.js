@@ -29,12 +29,14 @@
 // import { DesafioFormularios } from './formularios/desafio/desafio';
 // import DesafioFormulariosOrigamid from './formularios/desafio/origamid/App';
 // import { AulaCSS } from './css/Aula';
-import { BootstrapDemo } from './css/frameworks/Bootstrap';
+// import { BootstrapDemo } from './css/frameworks/Bootstrap';
+import { AnimacaoCss } from './css/animacoes/Animacao';
 
 export function App() {
   return (
     <>
-      <BootstrapDemo />
+      <AnimacaoCss />
+      {/* <BootstrapDemo /> */}
       {/* <AulaCSS /> */}
       {/* <DesafioFormularios /> */}
       {/* <DesafioFormulariosOrigamid /> */}
