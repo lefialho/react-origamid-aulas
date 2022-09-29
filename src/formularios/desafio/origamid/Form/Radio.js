@@ -1,7 +1,8 @@
 import React from 'react';
 
-const Radio = ({ pergunta, options, onChange, value, id, active }) => {
-  if (active === false) return null;
+const Radio = ({ pergunta, options, onChange, value, id, activeSlide }) => {
+  if (activeSlide === false) return null;
+
   return (
     <fieldset
       style={{
@@ -22,7 +23,7 @@ const Radio = ({ pergunta, options, onChange, value, id, active }) => {
             checked={value === option}
             value={option}
             onChange={onChange}
-          />
+          />{' '}
           {option}
         </label>
       ))}

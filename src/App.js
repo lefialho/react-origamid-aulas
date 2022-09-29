@@ -28,12 +28,14 @@
 // import { FormComponents } from './formularios/components';
 // import { DesafioFormularios } from './formularios/desafio/desafio';
 // import DesafioFormulariosOrigamid from './formularios/desafio/origamid/App';
-import { AulaCSS } from './css/Aula';
+// import { AulaCSS } from './css/Aula';
+import { BootstrapDemo } from './css/frameworks/Bootstrap';
 
 export function App() {
   return (
     <>
-      <AulaCSS />
+      <BootstrapDemo />
+      {/* <AulaCSS /> */}
       {/* <DesafioFormularios /> */}
       {/* <DesafioFormulariosOrigamid /> */}
       {/* <FormComponents /> */}

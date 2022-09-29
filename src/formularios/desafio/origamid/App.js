@@ -9,7 +9,7 @@ const perguntas = [
       'React.createComponent()',
       'React.createElement()',
     ],
-    resposta: 'React.createElement()',
+    respostaCorreta: 'React.createElement()',
     id: 'p1',
   },
   {
@@ -19,51 +19,60 @@ const perguntas = [
       'require("./Component")',
       'import "./Component"',
     ],
-    resposta: 'import Component from "./Component"',
+    respostaCorreta: 'import Component from "./Component"',
     id: 'p2',
   },
   {
     pergunta: 'Qual hook não é nativo?',
     options: ['useEffect()', 'useFetch()', 'useCallback()'],
-    resposta: 'useFetch()',
+    respostaCorreta: 'useFetch()',
     id: 'p3',
   },
   {
     pergunta: 'Qual palavra deve ser utilizada para criarmos um hook?',
     options: ['set', 'get', 'use'],
-    resposta: 'use',
+    respostaCorreta: 'use',
     id: 'p4',
   },
 ];
 
 const DesafioFormulariosOrigamid = () => {
-  const [respostas, setRespostas] = React.useState({
-    p1: '',
-    p2: '',
-    p3: '',
-    p4: '',
+  const [resposta, setResposta] = React.useState({
+    p1: 'React.makeComponent()',
+    p2: 'import Component from "./Component"',
+    p3: 'useEffect()',
+    p4: 'set',
   });
   const [slide, setSlide] = React.useState(0);
   const [resultado, setResultado] = React.useState(null);
 
   function handleChange({ target }) {
-    setRespostas({ ...respostas, [target.id]: target.value });
+    setResposta({ ...resposta, [target.id]: target.value });
+    // console.log({ [target.id]: target.value });
   }
 
   function resultadoFinal() {
     const corretas = perguntas.filter(
-      ({ id, resposta }) => respostas[id] === resposta,
+      ({ id, respostaCorreta }) => resposta[id] === respostaCorreta,
     );
-    setResultado(`Você acertou: ${corretas.length} de ${perguntas.length}`);
+    setResultado(`${corretas.length} de ${perguntas.length}`);
   }
 
-  function handleClick() {
+  function handlePrevClick() {
+    if (slide > 0) {
+      setSlide(slide - 1);
+    }
+    // console.log(slide);
+  }
+
+  function handleNextClick() {
     if (slide < perguntas.length - 1) {
       setSlide(slide + 1);
     } else {
       setSlide(slide + 1);
       resultadoFinal();
     }
+    // console.log(slide);
   }
 
   return (
@@ -72,17 +81,22 @@ const DesafioFormulariosOrigamid = () => {
       <form onSubmit={(event) => event.preventDefault()}>
         {perguntas.map((pergunta, index) => (
           <Radio
-            active={slide === index}
+            activeSlide={slide === index}
             key={pergunta.id}
-            value={respostas[pergunta.id]}
+            value={resposta[pergunta.id]}
             onChange={handleChange}
             {...pergunta}
           />
         ))}
         {resultado ? (
-          <p>{resultado}</p>
+          <p>
+            <b>Você acertou:</b> {resultado}
+          </p>
         ) : (
-          <button onClick={handleClick}>Próxima</button>
+          <div style={{ display: 'flex', gap: '1rem' }}>
+            <button onClick={handlePrevClick}>Anterior</button>
+            <button onClick={handleNextClick}>Próxima</button>
+          </div>
         )}
       </form>
     </>
