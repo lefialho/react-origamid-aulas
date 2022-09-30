@@ -30,12 +30,16 @@
 // import DesafioFormulariosOrigamid from './formularios/desafio/origamid/App';
 // import { AulaCSS } from './css/Aula';
 // import { BootstrapDemo } from './css/frameworks/Bootstrap';
-import { AnimacaoCss } from './css/animacoes/Animacao';
+// import { AnimacaoCss } from './css/animacoes/Animacao';
+import { SlideAnimation } from './css/animacoes/Slide';
+// import { Images } from './css/imagens/Imagens';
 
 export function App() {
   return (
     <>
-      <AnimacaoCss />
+      {/* <Images /> */}
+      <SlideAnimation />
+      {/* <AnimacaoCss /> */}
       {/* <BootstrapDemo /> */}
       {/* <AulaCSS /> */}
       {/* <DesafioFormularios /> */}
