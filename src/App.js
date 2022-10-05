@@ -31,14 +31,17 @@
 // import { AulaCSS } from './css/Aula';
 // import { BootstrapDemo } from './css/frameworks/Bootstrap';
 // import { AnimacaoCss } from './css/animacoes/Animacao';
-import { SlideAnimation } from './css/animacoes/Slide';
+// import { SlideAnimation } from './css/animacoes/Slide';
 // import { Images } from './css/imagens/Imagens';
+
+import { IntroRouter } from './router/Intro/IntroRouter';
 
 export function App() {
   return (
     <>
+      <IntroRouter />
       {/* <Images /> */}
-      <SlideAnimation />
+      {/* <SlideAnimation /> */}
       {/* <AnimacaoCss /> */}
       {/* <BootstrapDemo /> */}
       {/* <AulaCSS /> */}
