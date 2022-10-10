@@ -20,6 +20,7 @@ export function Header() {
       }}
     >
       {/* Nav Link cria uma classe active no item selecionado */}
+      {/* End evita o bug do elemento que está ativo, deixando apenas um ativado */}
       <NavLink to="/" end>
         Home
       </NavLink>{' '}

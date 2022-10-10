@@ -26,8 +26,11 @@ export function Produto() {
       <h1>Produto</h1>
       <p>Produto: {params.id}</p>
       <nav style={{ margin: '1rem 0' }}>
-        <NavLink to="">Descrição</NavLink> |{' '}
-        <NavLink to="avaliacao">Avaliação</NavLink> |{' '}
+        {/* End evita o bug do elemento que está ativo, deixando apenas um ativado */}
+        <NavLink to="" end>
+          Descrição
+        </NavLink>{' '}
+        | <NavLink to="avaliacao">Avaliação</NavLink> |{' '}
         <NavLink to="customizado">Customização</NavLink>
       </nav>
       {/* Outlet mostra aonde a renderização dos filhos específica vai aparecer */}
