@@ -1,5 +1,5 @@
 import styles from './Footer.module.css';
 
 export function Footer() {
-  return <footer className={styles.footer}>Footer</footer>;
+  return <footer className={styles.footer}>Alguns direitos reservados</footer>;
 }
