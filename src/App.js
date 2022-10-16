@@ -33,13 +33,15 @@
 // import { AnimacaoCss } from './css/animacoes/Animacao';
 // import { SlideAnimation } from './css/animacoes/Slide';
 // import { Images } from './css/imagens/Imagens';
-import { IntroRouter } from './router/Intro/IntroRouter';
-import { DesafioRouter } from './router/Desafio/Index';
+// import { IntroRouter } from './router/Intro/IntroRouter';
+// import { DesafioRouter } from './router/Desafio/Index';
+import { AulaProtoype } from './outrosRecursos/Proptype/index';
 
 export function App() {
   return (
     <>
-      <DesafioRouter />
+      <AulaProtoype />
+      {/* <DesafioRouter /> */}
       {/* <IntroRouter /> */}
       {/* <Images /> */}
       {/* <SlideAnimation /> */}
