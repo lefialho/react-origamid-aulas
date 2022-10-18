@@ -38,13 +38,15 @@
 // import { AulaProtoype } from './outrosRecursos/Proptype/index';
 // import { AulaLazySuspense } from './outrosRecursos/LazySuspense';
 // import { AulaMemo } from './outrosRecursos/Memo';
+// import { AulaUseReducer } from './outrosRecursos/useReducer';
 
-import { AulaUseReducer } from './outrosRecursos/useReducer';
+import { AulaClasses } from './outrosRecursos/Classes';
 
 export function App() {
   return (
     <>
-      <AulaUseReducer />
+      <AulaClasses />
+      {/* <AulaUseReducer /> */}
       {/* <AulaMemo /> */}
       {/* <AulaLazySuspense /> */}
       {/* <AulaProtoype /> */}
