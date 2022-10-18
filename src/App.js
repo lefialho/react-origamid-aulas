@@ -35,12 +35,19 @@
 // import { Images } from './css/imagens/Imagens';
 // import { IntroRouter } from './router/Intro/IntroRouter';
 // import { DesafioRouter } from './router/Desafio/Index';
-import { AulaProtoype } from './outrosRecursos/Proptype/index';
+// import { AulaProtoype } from './outrosRecursos/Proptype/index';
+// import { AulaLazySuspense } from './outrosRecursos/LazySuspense';
+// import { AulaMemo } from './outrosRecursos/Memo';
+
+import { AulaUseReducer } from './outrosRecursos/useReducer';
 
 export function App() {
   return (
     <>
-      <AulaProtoype />
+      <AulaUseReducer />
+      {/* <AulaMemo /> */}
+      {/* <AulaLazySuspense /> */}
+      {/* <AulaProtoype /> */}
       {/* <DesafioRouter /> */}
       {/* <IntroRouter /> */}
       {/* <Images /> */}
